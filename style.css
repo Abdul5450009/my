@@ -7,7 +7,6 @@
 
 body {
   background: #0e0e0e;
-  min-height: 100vh;
 }
 
 html {
@@ -75,6 +74,23 @@ header {
   width: 100%;
 }
 
+#button-1 {
+  border: 1px solid #797b7b;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  font-weight: bolder;
+  box-shadow: 0 0 10px rgb(7, 228, 143);
+}
+
+#button-1:hover {
+  transition: all ease 0.5s;
+  transform: scale(1.05);
+  color: #00cba9;
+}
+
 .social_links {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +113,10 @@ header {
   max-width: 70%;
   height: auto;
 }
-
+#icon-1:hover,#icon-2:hover,#icon-3:hover{
+  transition: all ease 0.5s;
+  transform: scale(1.05);
+}
 .home_section {
   display: flex;
   flex-wrap: wrap;
@@ -149,9 +168,11 @@ header {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -165,6 +186,10 @@ header {
 
   .nav>ul li a {
     font-size: 0.8rem;
+  }
+
+  #button-1 {
+    font-size: 0.6rem;
   }
 
   #icon-1>img {
@@ -215,6 +240,10 @@ header {
     font-size: 0.9rem;
   }
 
+  #button-1 {
+    font-size: 0.7rem;
+  }
+
   #icon-1>img {
     max-width: 65%;
   }
@@ -263,6 +292,10 @@ header {
     font-size: 1rem;
   }
 
+  #button-1 {
+    font-size: 0.8rem;
+  }
+
   #icon-1>img {
     max-width: 70%;
   }
@@ -305,6 +338,10 @@ header {
 @media only screen and (min-width: 427px) and (max-width: 769px) {
   .nav>ul li a {
     font-size: 1.05rem;
+  }
+
+  #button-1 {
+    font-size: 0.9rem;
   }
 
   #icon-1>img {
